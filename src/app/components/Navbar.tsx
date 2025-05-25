@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Navbar() {
   return (
     <>
@@ -17,9 +19,12 @@ function Navbar() {
             <li>استودیو</li>
           </ul>
         </div>
-        <button className="text-white bg-[var(--primary)] rounded-sm px-3 py-0">
+        <Link
+          href={"/login"}
+          className="text-white bg-[var(--primary)] rounded-sm px-3 py-0 flex items-center"
+        >
           ورود / ثبت نام
-        </button>
+        </Link>
       </nav>
     </>
   );

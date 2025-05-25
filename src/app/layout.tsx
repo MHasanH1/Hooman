@@ -23,6 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+  auth: React.ReactNode; // Add parallel route slot
 }>) {
   return (
     <html dir="rtl" lang="en">

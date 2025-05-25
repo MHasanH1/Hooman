@@ -44,7 +44,7 @@ export default function Home() {
             </span>
             <button className="flex items-center gap-2 text-sm">
               نمایش همه
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
             </button>
           </div>
           <MultiSlider />
@@ -56,7 +56,7 @@ export default function Home() {
             </span>
             <button className="flex items-center gap-2 text-sm">
               نمایش همه
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
             </button>
           </div>
           <MultiSlider showDots={false} />
@@ -69,7 +69,7 @@ export default function Home() {
             </span>
             <button className="flex items-center gap-2 text-sm">
               نمایش همه
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
             </button>
           </div>
           <MultiSlider />

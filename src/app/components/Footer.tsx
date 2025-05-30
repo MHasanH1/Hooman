@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
       <style>{styles}</style>
-      <footer className="flex gap-25 px-15 py-10 inset-shadow-sm inset-shadow-[#B3B3B32E] mt-10">
+      <footer className="flex gap-25 px-15 py-10 inset-shadow-sm inset-shadow-[#B3B3B32E]">
         <div className="w-full">
           <div>
             <img src="/Logo.svg" alt="hooman logo" />

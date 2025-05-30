@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="flex px-12 py-3 justify-between mb-10"
+        className="flex px-12 py-3 justify-between"
         style={{ boxShadow: "1px 1px 5px 1px #B3B3B32E" }}
       >
         <div className="flex gap-15 items-center">

@@ -33,14 +33,14 @@ function page() {
           </span>
         </div>
         <div className="grid grid-cols-4 gap-x-5 gap-y-10 mt-5">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card  />
+          <Card  />
+          <Card  />
+          <Card  />
+          <Card  />
+          <Card  />
+          <Card  />
+          <Card  />
         </div>
       </div>
     </>

@@ -12,11 +12,21 @@ function Navbar() {
             <img src="/Logo.svg" alt="hooman logo" />
           </div>
           <ul className="flex gap-12">
-            <li>صفحه اصلی</li>
-            <li>نمونه کار</li>
-            <li>خدمات</li>
-            <li>وبلاگ</li>
-            <li>استودیو</li>
+            <li>
+              <Link href={"/"}>صفحه اصلی</Link>
+            </li>
+            <li>
+              <Link href={"/"}>نمونه کار</Link>
+            </li>
+            <li>
+              <Link href={"/"}>خدمات</Link>
+            </li>
+            <li>
+              <Link href={"/blog"}>وبلاگ</Link>
+            </li>
+            <li>
+              <Link href={"/"}>استودیو</Link>
+            </li>
           </ul>
         </div>
         <Link

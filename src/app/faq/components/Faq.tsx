@@ -1,5 +1,5 @@
 "use client";
-import { FAQ } from "@/interfaces";
+import { FAQ } from "@/types/interfaces";
 import { useState } from "react";
 
 function Faq() {

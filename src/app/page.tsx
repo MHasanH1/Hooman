@@ -1,13 +1,16 @@
+import BlogCard from "./components/BlogCard";
 import Hero from "./components/Hero";
 import HeroCard from "./components/HeroCard";
 import HeroPropsBox from "./components/HeroPropsBox";
 import MultiSlider from "./components/MultiSlider";
+import NewestProduct from "./components/NewestProduct";
+import NewestProduct1 from "./components/NewestProduct1";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div className="py-5 pb-50 px-15">
+      <div className="py-5 px-15">
         <div className="grid grid-cols-4 gap-3">
           <HeroPropsBox text="تضمین بهترین قیمت" />
           <HeroPropsBox text="سفارشی سازی تمام کالا ها" />
@@ -38,8 +41,8 @@ export default function Home() {
           />
         </div>
         <div>
-          <div className="flex justify-between mt-20">
-            <span className="after:content-[''] after:flex after:w-full after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
+          <div className="flex justify-between mt-20 mb-5">
+            <span className="after:content-[''] after:flex after:w-35 after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
               جدیدترین محصولات
             </span>
             <button className="flex items-center gap-2 text-sm">
@@ -47,11 +50,13 @@ export default function Home() {
               {/* <img src="" alt="" /> */}
             </button>
           </div>
-          <MultiSlider />
+          <MultiSlider>
+            <NewestProduct />
+          </MultiSlider>
         </div>
         <div>
-          <div className="flex justify-between mt-20">
-            <span className="after:content-[''] after:flex after:w-full after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
+          <div className="flex justify-between mt-20 mb-5">
+            <span className="after:content-[''] after:flex after:w-35 after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
               جدیدترین محصولات
             </span>
             <button className="flex items-center gap-2 text-sm">
@@ -59,12 +64,14 @@ export default function Home() {
               {/* <img src="" alt="" /> */}
             </button>
           </div>
-          <MultiSlider showDots={false} />
+          <MultiSlider showDots={false} responsiveItemsNum={[5, 4, 2, 1]}>
+            <NewestProduct1 />
+          </MultiSlider>
         </div>
         <img src="/roadMap.svg" alt="road map" className="my-20" />
         <div>
-          <div className="flex justify-between mt-20">
-            <span className="after:content-[''] after:flex after:w-full after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
+          <div className="flex justify-between mt-20 mb-5">
+            <span className="after:content-[''] after:flex after:w-35 after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
               وبلاگ
             </span>
             <button className="flex items-center gap-2 text-sm">
@@ -72,7 +79,9 @@ export default function Home() {
               {/* <img src="" alt="" /> */}
             </button>
           </div>
-          <MultiSlider />
+          <MultiSlider responsiveItemsNum={[3, 3, 2, 1]}> 
+            <BlogCard />
+          </MultiSlider>
         </div>
       </div>
     </>

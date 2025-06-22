@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Footer() {
   const styles = `
   span {
@@ -45,11 +47,21 @@ function Footer() {
         <div className="w-full">
           <span className="text-[var(--primary)]">Navigation</span>
           <ul className="grid gap-3 mt-3">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Service</li>
-            <li>Resume</li>
-            <li>Project</li>
+            <li>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link href={"/aboutus"}>About Us</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Service</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Resume</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Project</Link>
+            </li>
           </ul>
         </div>
       </footer>

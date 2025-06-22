@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BlogCard from "./components/BlogCard";
 import Hero from "./components/Hero";
 import HeroCard from "./components/HeroCard";
@@ -74,10 +75,10 @@ export default function Home() {
             <span className="after:content-[''] after:flex after:w-35 after:h-0.5 after:mt-1 after:bg-gradient-to-l after:from-[#209099] after:to-[#B30FC1]">
               وبلاگ
             </span>
-            <button className="flex items-center gap-2 text-sm">
+            <Link href={'/blog'} className="flex items-center gap-2 text-sm">
               نمایش همه
               {/* <img src="" alt="" /> */}
-            </button>
+            </Link>
           </div>
           <MultiSlider responsiveItemsNum={[3, 3, 2, 1]}> 
             <BlogCard />

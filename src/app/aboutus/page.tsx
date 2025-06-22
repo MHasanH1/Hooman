@@ -3,7 +3,7 @@ import Card from "./components/Card";
 function page() {
   return (
     <>
-      <div className="px-25">
+      <div className="px-25 mt-10">
         <div className="text-center px-55">
           <img src="/aboutImg.svg" alt="about us image" className="mx-auto" />
           <h6 className="mt-10 mb-3 font-bold text-xl">درباره هومان</h6>
